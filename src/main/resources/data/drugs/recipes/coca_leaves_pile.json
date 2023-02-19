@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    },
+    {
+      "item": "drugs:coca_leaves"
+    }
+  ],
+  "result": {
+    "item": "drugs:coca_leaves_pile",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "blund": {
+    "sounds": [
+      "drugs:blund"
+    ]
+  },
+  "blund_is_smoking": {
+    "sounds": [
+      "drugs:blund_is_smoking"
+    ]
+  }
+}

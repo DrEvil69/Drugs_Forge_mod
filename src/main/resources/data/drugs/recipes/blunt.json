@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "###",
+    " G "
+  ],
+  "key": {
+    "#": {
+      "item": "drugs:cannabis_one_gramm"
+    },
+    "G": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "drugs:blunt",
+    "count": 1
+  }
+}

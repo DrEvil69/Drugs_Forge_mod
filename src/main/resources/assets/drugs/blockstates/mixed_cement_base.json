@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "drugs:block/mixed_cement_base" }
+  }
+}

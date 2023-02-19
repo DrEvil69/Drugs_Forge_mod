@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "drugs:cannabis_flower"
+  },
+  "result": "drugs:cannabis_flower_dried",
+  "experience": 0.1,
+  "cookingtime": 300
+}

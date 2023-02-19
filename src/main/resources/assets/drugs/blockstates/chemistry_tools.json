@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "drugs:block/chemistry_tools",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "drugs:block/chemistry_tools",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "drugs:block/chemistry_tools",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "drugs:block/chemistry_tools",
+      "y": 180
+    }
+  }
+}

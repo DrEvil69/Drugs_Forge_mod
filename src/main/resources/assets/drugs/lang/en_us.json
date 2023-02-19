@@ -1,0 +1,35 @@
+{
+  "block.drugs.mixed_cement_base": "Mixed Cement Base",
+  "block.drugs.cement": "Cement",
+  "block.drugs.chemistry_tools": "Chemistry Tools",
+  "block.drugs.crack_tools": "Ccrack Tools",
+  "block.drugs.sulfur": "Sulfur",
+  "block.drugs.coca_leaves_pile": "Coca Leaves Pile",
+  "block.drugs.cannabis_plant": "Marijuana Plant",
+  "item.drugs.cannabis_seeds": "Marijuana Seeds",
+  "item.drugs.cannabis_flower": "Marijuana Flower",
+  "item.drugs.cannabis_flower_dried": "Dried Marijuana Flower",
+  "item.drugs.cannabis_one_gramm": "Marijuana (1g)",
+  "item.drugs.blunt": "Blunt",
+  "item.drugs.coca_leaves": "Coca Leaves",
+  "item.drugs.coca_seeds": "Coca Seeds",
+  "item.drugs.bucket_of_petrol": "Petrol Bucket",
+  "item.drugs.sulfur_acid": "Sulfur Acid",
+  "item.drugs.coca_paste_bucket": "Coca Paste Bucket",
+  "item.drugs.cocain": "Cocain",
+
+
+  "item.minecraft.potion.effect.cannabis_high_potion": "Cannabis Potion",
+  "item.minecraft.splash_potion.effect.cannabis_high_potion": "Splash Potion of Cannabis",
+  "item.minecraft.lingering_potion.effect.cannabis_high_potion": "Lingering Potion of Cannabis",
+  "item.minecraft.potion.effect.cocain_high_potion": "Cocain Potion",
+  "item.minecraft.splash_potion.effect.cocain_high_potion": "Splash Potion of Cocain",
+  "item.minecraft.lingering_potion.effect.cocain_high_potion": "Lingering Potion of Cocain",
+
+  "entity.minecraft.villager.crackmaster": "Junkie",
+  "entity.minecraft.villager.chemist": "Chemist",
+
+  "itemGroup.drugs": "Drugs",
+  "effect.drugs.cannabis_high": "On Cannabis",
+  "effect.drugs.cocain_high": "On Cocain"
+}

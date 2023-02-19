@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "drugs:cannabis_flower_dried"
+    }
+  ],
+  "result": {
+    "item": "drugs:cannabis_one_gramm",
+    "count": 2
+  }
+}

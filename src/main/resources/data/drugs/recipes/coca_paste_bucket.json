@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "drugs:coca_leaves_pile"
+    },
+    {
+      "item": "drugs:coca_leaves_pile"
+    },
+    {
+      "item": "drugs:coca_leaves_pile"
+    },
+    {
+      "item": "drugs:coca_leaves_pile"
+    },
+    {
+      "item": "drugs:coca_leaves_pile"
+    },
+    {
+      "item": "drugs:coca_leaves_pile"
+    },
+    {
+      "item": "drugs:cement"
+    },
+    {
+      "item": "drugs:bucket_of_petrol"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "drugs:coca_paste_bucket",
+    "count": 1
+  }
+}

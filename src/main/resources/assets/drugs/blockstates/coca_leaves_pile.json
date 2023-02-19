@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "drugs:block/coca_leaves_pile",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "drugs:block/coca_leaves_pile",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "drugs:block/coca_leaves_pile",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "drugs:block/coca_leaves_pile",
+      "y": 180
+    }
+  }
+}

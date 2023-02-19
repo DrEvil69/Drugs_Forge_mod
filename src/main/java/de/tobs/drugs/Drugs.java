@@ -2,6 +2,7 @@ package de.tobs.drugs;
 
 import com.mojang.logging.LogUtils;
 import de.tobs.drugs.block.ModBlocks;
+import de.tobs.drugs.effect.ModEffects;
 import de.tobs.drugs.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -29,6 +30,7 @@ public class Drugs
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

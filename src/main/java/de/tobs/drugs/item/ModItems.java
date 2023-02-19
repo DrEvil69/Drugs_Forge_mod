@@ -2,6 +2,8 @@ package de.tobs.drugs.item;
 
 import de.tobs.drugs.Drugs;
 import de.tobs.drugs.block.ModBlocks;
+import de.tobs.drugs.effect.ModEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -23,3 +25,4 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 }
+

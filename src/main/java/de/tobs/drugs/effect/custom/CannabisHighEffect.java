@@ -15,8 +15,8 @@ public class CannabisHighEffect extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level.isClientSide()){
-            entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 400, 0));
-            entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 400, 0));
+            entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 10, 0));
+            entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 10, 0));
         }
         super.applyEffectTick(entity, amplifier);
     }

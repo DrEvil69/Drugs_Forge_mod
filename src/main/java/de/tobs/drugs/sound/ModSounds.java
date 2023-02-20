@@ -10,6 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Drugs.MOD_ID);
+    public static final RegistryObject<SoundEvent> NOTHING_SOUND = registerSoundEvent("nothing_sound");
     public static final RegistryObject<SoundEvent> SMOKING_SOUND = registerSoundEvent("smoking_sound");
     public static final RegistryObject<SoundEvent> SNIFFING_SOUND = registerSoundEvent("sniffing_sound");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){

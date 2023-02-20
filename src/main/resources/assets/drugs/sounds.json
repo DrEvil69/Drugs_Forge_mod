@@ -1,4 +1,9 @@
 {
+  "nothing_sound": {
+    "sounds": [
+      "drugs:nothing_sound"
+    ]
+  },
   "smoking_sound": {
     "subtitle": "sounds.drugs.smoking_sound",
     "sounds": [

@@ -1,6 +1,7 @@
 package de.tobs.drugs.event;
 
 import de.tobs.drugs.Drugs;
+import de.tobs.drugs.block.ModBlocks;
 import de.tobs.drugs.item.ModItems;
 import de.tobs.drugs.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -18,12 +19,35 @@ import java.util.List;
 public class ModEvents {
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event){
+        //----------------------------------------Crackie----------------------------------------------------------------------------------
+        if (event.getType() == ModVillagers.CRACKIE.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.EMERALD, 8);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModItems.CANNABIS_ONE_GRAMM.get(), 1), stack, 5, 4, 0.02F));
+        }
+        if (event.getType() == ModVillagers.CRACKIE.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.EMERALD, 40);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModItems.COCAIN.get(), 1), stack, 3, 8, 0.02F));
+        }
+        //----------------------------------------Chemist----------------------------------------------------------------------------------
+        if (event.getType() == ModVillagers.CHEMIST.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ModItems.SULFUR_ACID.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModBlocks.SULFUR.get(), 1), new ItemStack(Items.WATER_BUCKET, 1), stack, 5, 4, 0.02F));
+        }
         if (event.getType() == ModVillagers.CHEMIST.get()){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 40);
-            int villagerLevel = 1;
+            int villagerLevel = 2;
 
-            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModItems.COCAIN.get(), 1), stack, 4, 8, 0.02F));
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModItems.COCAIN.get(), 1), stack, 3, 8, 0.02F));
         }
     }
 }

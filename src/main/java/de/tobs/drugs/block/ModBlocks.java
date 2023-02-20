@@ -1,10 +1,7 @@
 package de.tobs.drugs.block;
 
 import de.tobs.drugs.Drugs;
-import de.tobs.drugs.block.custom.CannabisCropBlock;
-import de.tobs.drugs.block.custom.ChemistryToolsBlock;
-import de.tobs.drugs.block.custom.CocaCropBlock;
-import de.tobs.drugs.block.custom.CocaLeavesPileBlock;
+import de.tobs.drugs.block.custom.*;
 import de.tobs.drugs.item.ModItems;
 import de.tobs.drugs.item.ModTab;
 import net.minecraft.world.item.BlockItem;
@@ -24,10 +21,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Drugs.MOD_ID);
 
     public static final RegistryObject<Block> MIXED_CEMENT_BASE = registerBlock("mixed_cement_base", () -> new FallingBlock(BlockBehaviour.Properties.of(Material.SAND).strength(4F).sound(SoundType.SAND)), ModTab.DRUGS_TAB);
-    public static final RegistryObject<Block> CEMENT = registerBlock("cement", () -> new GlassBlock(BlockBehaviour.Properties.of(Material.SAND).strength(4F).sound(SoundType.SAND)), ModTab.DRUGS_TAB);
-    public static final RegistryObject<Block> CHEMISTRY_TOOLS = registerBlock("chemistry_tools", () -> new ChemistryToolsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(6F).sound(SoundType.GLASS).noOcclusion()), ModTab.DRUGS_TAB);
+    public static final RegistryObject<Block> CEMENT = registerBlock("cement", () -> new FallingBlock(BlockBehaviour.Properties.of(Material.SAND).strength(4F).sound(SoundType.SAND)), ModTab.DRUGS_TAB);
+    public static final RegistryObject<Block> CHEMISTRY_TOOLS = registerBlock("chemistry_tools", () -> new ChemistryToolsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(2F).sound(SoundType.GLASS).noOcclusion()), ModTab.DRUGS_TAB);
+    public static final RegistryObject<Block> CRACK_TOOLS = registerBlock("crack_tools", () -> new CrackToolsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(2F).sound(SoundType.GLASS).noOcclusion()), ModTab.DRUGS_TAB);
     public static final RegistryObject<Block> COCA_LEAVES_PILE = registerBlock("coca_leaves_pile", () -> new CocaLeavesPileBlock(BlockBehaviour.Properties.of(Material.LEAVES).strength(6F).sound(SoundType.AZALEA_LEAVES).noOcclusion()), ModTab.DRUGS_TAB);
-
+    public static final RegistryObject<Block> SULFUR = registerBlock("sulfur", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6F).sound(SoundType.STONE)), ModTab.DRUGS_TAB);
 
 
     public static final RegistryObject<Block> CANNABIS_CROP = BLOCKS.register("cannabis_plant", () -> new CannabisCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));

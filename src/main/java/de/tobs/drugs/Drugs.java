@@ -26,11 +26,11 @@ import org.slf4j.Logger;
 public class Drugs
 {
     public static final String MOD_ID = "drugs";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public Drugs()
     {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();;
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

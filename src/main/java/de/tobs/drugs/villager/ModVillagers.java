@@ -3,6 +3,7 @@ package de.tobs.drugs.villager;
 import com.google.common.collect.ImmutableSet;
 import de.tobs.drugs.Drugs;
 import de.tobs.drugs.block.ModBlocks;
+import de.tobs.drugs.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraft.world.entity.npc.VillagerProfession;
@@ -20,9 +21,13 @@ public class ModVillagers {
 
     public static final RegistryObject<PoiType> CHEMIST_POI = POI_TYPES.register("chemist_poi", ()-> new PoiType(ImmutableSet.copyOf(ModBlocks.CHEMISTRY_TOOLS.get().getStateDefinition().getPossibleStates()), 1, 1));
     public static final RegistryObject<VillagerProfession> CHEMIST = VILLAGER_PROFESSIONS.register("chemist", ()-> new VillagerProfession("chemist", x -> x.get() == CHEMIST_POI.get(), x -> x.get() == CHEMIST_POI.get(), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.BREWING_STAND_BREW));
+    public static final RegistryObject<PoiType> CRACKIE_POI = POI_TYPES.register("crackie_poi", ()-> new PoiType(ImmutableSet.copyOf(ModBlocks.CRACK_TOOLS.get().getStateDefinition().getPossibleStates()), 1, 1));
+    public static final RegistryObject<VillagerProfession> CRACKIE = VILLAGER_PROFESSIONS.register("crackie", ()-> new VillagerProfession("crackie", x -> x.get() == CRACKIE_POI.get(), x -> x.get() == CRACKIE_POI.get(), ImmutableSet.of(), ImmutableSet.of(), ModSounds.SNIFFING_SOUND.get()));
+
     public static void registerPOIs(){
         try{
             ObfuscationReflectionHelper.findMethod(PoiType.class, "registerBlockStates", PoiType.class).invoke(null, CHEMIST_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class, "registerBlockStates", PoiType.class).invoke(null, CRACKIE_POI.get());
         }catch (InvocationTargetException | IllegalAccessException exception){
             exception.printStackTrace();
         }

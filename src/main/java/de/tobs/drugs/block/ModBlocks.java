@@ -3,6 +3,8 @@ package de.tobs.drugs.block;
 import de.tobs.drugs.Drugs;
 import de.tobs.drugs.block.custom.CannabisCropBlock;
 import de.tobs.drugs.block.custom.ChemistryToolsBlock;
+import de.tobs.drugs.block.custom.CocaCropBlock;
+import de.tobs.drugs.block.custom.CocaLeavesPileBlock;
 import de.tobs.drugs.item.ModItems;
 import de.tobs.drugs.item.ModTab;
 import net.minecraft.world.item.BlockItem;
@@ -24,10 +26,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> MIXED_CEMENT_BASE = registerBlock("mixed_cement_base", () -> new FallingBlock(BlockBehaviour.Properties.of(Material.SAND).strength(4F).sound(SoundType.SAND)), ModTab.DRUGS_TAB);
     public static final RegistryObject<Block> CEMENT = registerBlock("cement", () -> new GlassBlock(BlockBehaviour.Properties.of(Material.SAND).strength(4F).sound(SoundType.SAND)), ModTab.DRUGS_TAB);
     public static final RegistryObject<Block> CHEMISTRY_TOOLS = registerBlock("chemistry_tools", () -> new ChemistryToolsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(6F).sound(SoundType.GLASS).noOcclusion()), ModTab.DRUGS_TAB);
+    public static final RegistryObject<Block> COCA_LEAVES_PILE = registerBlock("coca_leaves_pile", () -> new CocaLeavesPileBlock(BlockBehaviour.Properties.of(Material.LEAVES).strength(6F).sound(SoundType.AZALEA_LEAVES).noOcclusion()), ModTab.DRUGS_TAB);
 
 
 
     public static final RegistryObject<Block> CANNABIS_CROP = BLOCKS.register("cannabis_plant", () -> new CannabisCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> COCA_CROP = BLOCKS.register("coca_plant", () -> new CocaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

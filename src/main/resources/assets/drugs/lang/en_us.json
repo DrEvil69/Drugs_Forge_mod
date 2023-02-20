@@ -31,5 +31,7 @@
 
   "itemGroup.drugs": "Drugs",
   "effect.drugs.cannabis_high": "On Cannabis",
-  "effect.drugs.cocain_high": "On Cocain"
+  "effect.drugs.cocain_high": "On Cocain",
+  "sounds.drugs.smoking_sound": "Smoking Sound",
+  "sounds.drugs.sniffing_sound": "Sniffing Sound"
 }

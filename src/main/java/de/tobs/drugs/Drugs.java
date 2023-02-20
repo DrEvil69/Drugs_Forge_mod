@@ -5,6 +5,7 @@ import de.tobs.drugs.block.ModBlocks;
 import de.tobs.drugs.effect.ModEffects;
 import de.tobs.drugs.event.ModEvents;
 import de.tobs.drugs.item.ModItems;
+import de.tobs.drugs.sound.ModSounds;
 import de.tobs.drugs.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -35,6 +36,7 @@ public class Drugs
         ModBlocks.register(modEventBus);
         ModEffects.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -53,7 +55,9 @@ public class Drugs
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CANNABIS_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COCA_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHEMISTRY_TOOLS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COCA_LEAVES_PILE.get(), RenderType.translucent());
         }
     }
     @SubscribeEvent

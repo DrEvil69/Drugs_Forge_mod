@@ -1,12 +1,14 @@
 {
-  "blund": {
+  "smoking_sound": {
+    "subtitle": "sounds.drugs.smoking_sound",
     "sounds": [
-      "drugs:blund"
+      "drugs:smoking_sound"
     ]
   },
-  "blund_is_smoking": {
+  "sniffing_sound": {
+    "subtitle": "sounds.drugs.sniffing_sound",
     "sounds": [
-      "drugs:blund_is_smoking"
+      "drugs:sniffing_sound"
     ]
   }
 }

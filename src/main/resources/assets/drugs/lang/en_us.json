@@ -26,8 +26,8 @@
   "item.minecraft.splash_potion.effect.cocain_high_potion": "Splash Potion of Cocain",
   "item.minecraft.lingering_potion.effect.cocain_high_potion": "Lingering Potion of Cocain",
 
-  "entity.minecraft.villager.crackmaster": "Junkie",
-  "entity.minecraft.villager.chemist": "Chemist",
+  "entity.minecraft.villager.drugs.crackmaster": "Junkie",
+  "entity.minecraft.villager.drugs.chemist": "Chemist",
 
   "itemGroup.drugs": "Drugs",
   "effect.drugs.cannabis_high": "On Cannabis",

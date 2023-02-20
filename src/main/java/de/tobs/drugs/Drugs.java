@@ -3,11 +3,14 @@ package de.tobs.drugs;
 import com.mojang.logging.LogUtils;
 import de.tobs.drugs.block.ModBlocks;
 import de.tobs.drugs.effect.ModEffects;
+import de.tobs.drugs.event.ModEvents;
 import de.tobs.drugs.item.ModItems;
+import de.tobs.drugs.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -31,6 +34,7 @@ public class Drugs
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -38,6 +42,9 @@ public class Drugs
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(()-> {
+            ModVillagers.registerPOIs();
+        });
     }
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents

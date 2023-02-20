@@ -46,6 +46,7 @@ public class Drugs
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CANNABIS_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHEMISTRY_TOOLS.get(), RenderType.translucent());
         }
     }
     @SubscribeEvent

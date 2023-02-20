@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
+    //for recipes visit https://crafting.thedestruc7i0n.ca/
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Drugs.MOD_ID);
     public static final RegistryObject<Item> CANNABIS_SEEDS = ITEMS.register("cannabis_seeds", () -> new ItemNameBlockItem(ModBlocks.CANNABIS_CROP.get(), new Item.Properties().tab(ModTab.DRUGS_TAB)));
     public static final RegistryObject<Item> CANNABIS_FLOWER = ITEMS.register("cannabis_flower", () -> new Item(new Item.Properties().tab(ModTab.DRUGS_TAB)));

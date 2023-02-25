@@ -13,7 +13,7 @@
   "item.drugs.blunt": "Blunt",
   "item.drugs.coca_leaves": "Coca Leaves",
   "item.drugs.coca_seeds": "Coca Seeds",
-  "item.drugs.bucket_of_petrol": "Petrol Bucket",
+  "item.drugs.petrol_bucket": "Petrol Bucket",
   "item.drugs.sulfur_acid": "Sulfur Acid",
   "item.drugs.coca_paste_bucket": "Coca Paste Bucket",
   "item.drugs.cocain": "Cocain",
@@ -26,7 +26,7 @@
   "item.minecraft.splash_potion.effect.cocain_high_potion": "Splash Potion of Cocain",
   "item.minecraft.lingering_potion.effect.cocain_high_potion": "Lingering Potion of Cocain",
 
-  "entity.minecraft.villager.drugs.crackmaster": "Junkie",
+  "entity.minecraft.villager.drugs.crackie": "Junkie",
   "entity.minecraft.villager.drugs.chemist": "Chemist",
 
   "itemGroup.drugs": "Drugs",

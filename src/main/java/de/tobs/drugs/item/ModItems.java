@@ -5,6 +5,7 @@ import de.tobs.drugs.block.ModBlocks;
 import de.tobs.drugs.effect.ModEffects;
 import de.tobs.drugs.item.custom.BluntItem;
 import de.tobs.drugs.item.custom.CocainItem;
+import de.tobs.drugs.item.custom.PetrolItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
@@ -24,6 +25,8 @@ public class ModItems {
     public static final RegistryObject<Item> CANNABIS_FLOWER_DRIED = ITEMS.register("cannabis_flower_dried", () -> new Item(new Item.Properties().tab(ModTab.DRUGS_TAB)));
     public static final RegistryObject<Item> CANNABIS_ONE_GRAMM = ITEMS.register("cannabis_one_gramm", () -> new Item(new Item.Properties().tab(ModTab.DRUGS_TAB)));
     public static final RegistryObject<Item> SULFUR_ACID = ITEMS.register("sulfur_acid", () -> new Item(new Item.Properties().tab(ModTab.DRUGS_TAB)));
+    public static final RegistryObject<Item> PETROL_BUCKET = ITEMS.register("petrol_bucket", () -> new PetrolItem(new Item.Properties().tab(ModTab.DRUGS_TAB)));
+    public static final RegistryObject<Item> COCA_PASTE_BUCKET = ITEMS.register("coca_paste_bucket", () -> new Item(new Item.Properties().tab(ModTab.DRUGS_TAB)));
 
     public static final RegistryObject<Item> BLUNT = ITEMS.register("blunt", () -> new BluntItem(new Item.Properties().tab(ModTab.DRUGS_TAB).food(new FoodProperties.Builder().saturationMod(0).effect(()-> new MobEffectInstance(ModEffects.CANNABIS_HIGH.get(), 6000, 0), 1.0F).build())));
     public static final RegistryObject<Item> COCAIN = ITEMS.register("cocain", () -> new CocainItem(new Item.Properties().tab(ModTab.DRUGS_TAB).food(new FoodProperties.Builder().saturationMod(0).effect(()-> new MobEffectInstance(ModEffects.COCAIN_HIGH.get(), 6000, 0), 1.0F).build())));

@@ -44,10 +44,18 @@ public class ModEvents {
         }
         if (event.getType() == ModVillagers.CHEMIST.get()){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-            ItemStack stack = new ItemStack(Items.EMERALD, 40);
+            ItemStack stack = new ItemStack(ModItems.PETROL_BUCKET.get(), 1);
             int villagerLevel = 2;
 
-            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModItems.COCAIN.get(), 1), stack, 3, 8, 0.02F));
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 15), stack, 3, 12, 0.02F));
         }
+        if (event.getType() == ModVillagers.CHEMIST.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ModItems.COCAIN.get(), 1);
+            int villagerLevel = 3;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(new ItemStack(ModItems.COCA_PASTE_BUCKET.get(), 1), new ItemStack(Items.EMERALD, 1), stack, 3, 12, 0.02F));
+        }
+
     }
 }
